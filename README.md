@@ -14,3 +14,17 @@ $ cat common/temp/node_modules/.registry.npmjs.org/react-focus-lock/1.18.2/react
   "description": "It is a trap! (for a focus)",
   ...
 ```
+
+**This bug seems not to occur when using pnpm without Rush**:
+
+```shell
+$ cd pnpm-only/
+$ npm install --global pnpm@2.25.6
+$ pnpm install
+$ cat node_modules/.registry.npmjs.org/react-focus-lock/1.17.7/node_modules/react-focus-lock/package.json
+{
+  "name": "react-focus-lock",
+  "version": "1.17.7",
+  "description": "It is a trap! (for a focus)",
+  ...
+```
