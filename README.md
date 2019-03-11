@@ -1,6 +1,6 @@
 # rush-pnpm-bug
 
-Reproduction of a bug with Rush + pnpm.
+Reproduction of a bug with Rush + pnpm: https://github.com/Microsoft/web-build-tools/issues/1142
 
 The bug is that **react-focus-lock@1.18.2** is installed, despite **react-focus-lock@1.17.7** being declared in [shrinkwrap.yaml](common/config/rush/shrinkwrap.yaml):
 
