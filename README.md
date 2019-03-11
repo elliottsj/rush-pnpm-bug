@@ -15,7 +15,7 @@ $ cat common/temp/node_modules/.registry.npmjs.org/react-focus-lock/1.18.2/react
   ...
 ```
 
-**This bug seems not to occur when using pnpm without Rush**:
+**This bug seems not to occur when using pnpm without Rush**. I've copied `common/temp/package.json` and `common/config/rush/shrinkwrap.yaml` into a directory `pnpm-only/` and removed all references to "mypackage.tgz". Perform the install using just pnpm:
 
 ```shell
 $ cd pnpm-only/
@@ -28,3 +28,5 @@ $ cat node_modules/.registry.npmjs.org/react-focus-lock/1.17.7/node_modules/reac
   "description": "It is a trap! (for a focus)",
   ...
 ```
+
+This may indicate that it's actually a pnpm bug related to `.tgz` dependencies?
