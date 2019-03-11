@@ -1,0 +1,13 @@
+# OS speecific files
+.DS_Store
+
+# Logs
+*.log*
+
+# Dependency directories
+node_modules/
+
+# Rush files
+common/temp/**
+package-deps.json
+.DS_Store
